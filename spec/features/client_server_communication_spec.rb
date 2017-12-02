@@ -13,6 +13,6 @@ RSpec.describe "Client - server communication" do
     code = File.expand_path("../../fixtures/hello_server.c", __FILE__)
     execute = Codepanda::Client.new.execute(File.read(code))
 
-    expect(execute).to eq("Hello, Server!")
+    expect(execute.result).to eq("Hello, Server!")
   end
 end

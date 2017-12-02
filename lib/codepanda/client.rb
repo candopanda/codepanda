@@ -11,7 +11,7 @@ module Codepanda
     end
 
     def execute(source_code)
-      stub.execute(Codepanda::SourceCodeRequest.new(code: source_code)).result
+      stub.execute(Codepanda::SourceCodeRequest.new(code: source_code))
     end
   end
 end
