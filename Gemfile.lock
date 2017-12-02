@@ -1,3 +1,9 @@
+PATH
+  remote: .
+  specs:
+    codepanda (0.0.1)
+      grpc (~> 1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -74,14 +80,12 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  grpc
-  grpc-tools
-  rspec
-  rubocop
-  rubocop-rspec
-
-RUBY VERSION
-   ruby 2.4.2p198
+  bundler (~> 1.7)
+  codepanda!
+  grpc-tools (~> 1.7)
+  rspec (~> 3.7)
+  rubocop (~> 0.51)
+  rubocop-rspec (~> 1.20)
 
 BUNDLED WITH
    1.15.4

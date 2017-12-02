@@ -1,0 +1,3 @@
+#!/bin/bash
+
+grpc_tools_ruby_protoc -I protos --ruby_out=lib/codepanda --grpc_out=lib/codepanda protos/code_execution.proto
