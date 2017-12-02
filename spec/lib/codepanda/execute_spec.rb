@@ -21,7 +21,7 @@ module Codepanda
         let(:source_code) { File.read(File.join(fixtures_path, "hello_world_invalid.c")) }
 
         it "returns detailed error output" do
-          expect(process.output).to include("character [-Werror,-Winvalid-pp-token]")
+          expect(process.output).to include("character [-Werror")
         end
 
         it "returns success" do

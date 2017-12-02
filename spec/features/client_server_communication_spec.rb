@@ -7,6 +7,7 @@ RSpec.describe "Client - server communication" do
 
   before(:suite) do
     fork { server.run }
+    sleep 1
   end
 
   it "handles client requests" do
