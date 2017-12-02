@@ -5,9 +5,8 @@ require "client"
 RSpec.describe "Client - server communication" do
   let(:server) { Codepanda::Server.init }
 
-  before(:suite) do
+  before do
     fork { server.run }
-    sleep 1
   end
 
   it "handles client requests" do
