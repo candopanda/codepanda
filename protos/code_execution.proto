@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package codepanda;
+
+service CodeExecution {
+  // Sends a greeting
+  rpc Execute (SourceCodeRequest) returns (ExecutedResult) {}
+}
+
+message SourceCodeRequest {
+  string code = 1;
+}
+
+message ExecutedResult {
+  string result = 1;
+  bool success = 2;
+}
