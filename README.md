@@ -41,3 +41,10 @@ Codepanda::Client.new.execute(source_code)
 Please use `CODEPANDA_PORT` env variable (default: 50051) to setup server listening port.
 And the `CODEPANDA_SERVER_URL` to set server address where client should
 connect to (default: `localhost:50051`).
+
+
+## Roadmap
+
+* Add LB and run multiple servers and pick server by a distribution
+  protocol
+* Add better failure error explanation
