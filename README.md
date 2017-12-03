@@ -35,3 +35,9 @@ Codepanda::Client.new.execute(source_code)
 > Please note that `Codepange::Client.new` establishes a new connection
 > and consider to use it in a pair with
 > (connection_pool)[https://github.com/mperham/connection_pool]
+
+## Configuration
+
+Please use `CODEPANDA_PORT` env variable (default: 50051) to setup server listening port.
+And the `CODEPANDA_SERVER_URL` to set server address where client should
+connect to (default: `localhost:50051`).
