@@ -6,7 +6,7 @@ module Codepanda
       server = GRPC::RpcServer.new
       server.add_http2_port("0.0.0.0:50051", :this_port_is_insecure)
       server.handle(Codepanda::RequestHandler)
-      puts "Server is started"
+      puts "*Codepanda is listening on tcp://0.0.0.0:50051"
 
       server
     end
